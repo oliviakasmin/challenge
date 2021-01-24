@@ -37,6 +37,13 @@ const Controls: React.FC<ControlProps> = ({
     store.dispatch(resetScore())
   }
 
+  /**
+  const handleAutoClick = (): void => {
+    store.dispatch(autoInit())
+  }
+  add item type and action to redux store reducer
+   */
+
   return (
     <>
       <div className={styles.score}>
@@ -67,6 +74,7 @@ const Controls: React.FC<ControlProps> = ({
         Reset Score
       </Button>
       <Button
+        /** onClick={handleAutoClick} */
         className={styles.button}
         fullWidth
         color='secondary'
